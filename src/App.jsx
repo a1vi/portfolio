@@ -414,22 +414,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        width: '240px',
-        zIndex: 100,
-        borderRight: '1px solid rgba(255, 255, 255, 0.1)',
-        overflow: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        padding: '2rem 0',
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        backdropFilter: 'blur(16px)',
-      }}
+      className="sidebar"
     >
       <div style={{ width: '100%', opacity: 1, pointerEvents: 'auto', display: 'flex', flexDirection: 'column', height: '100%' }}>
         <div style={{ padding: '0 2rem', marginBottom: '3rem' }}>
@@ -497,22 +482,14 @@ const Hero = () => {
       position: 'relative',
       zIndex: 1
     }}>
-      <div className="container" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(12, 1fr)',
-        gridAutoRows: 'minmax(140px, auto)',
-        gap: '1.5rem',
-        width: '100%',
-        maxWidth: '1200px'
-      }}>
+
+      <div className="container hero-grid">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="glass"
+          className="glass span-8 row-span-2 hero-text-card"
           style={{
-            gridColumn: 'span 8',
-            gridRow: 'span 2',
             padding: '3rem',
             display: 'flex',
             flexDirection: 'column',
@@ -539,10 +516,8 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="glass"
+          className="glass span-4 row-span-3 hero-image-card"
           style={{
-            gridColumn: 'span 4',
-            gridRow: 'span 3',
             padding: '0',
             overflow: 'hidden',
             position: 'relative',
@@ -574,9 +549,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="glass"
+          className="glass span-3"
           style={{
-            gridColumn: 'span 3',
             padding: '1.5rem',
             display: 'flex',
             flexDirection: 'column',
@@ -597,9 +571,8 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="glass"
+          className="glass span-2"
           style={{
-            gridColumn: 'span 2',
             padding: '1.5rem',
             display: 'flex',
             alignItems: 'center',
@@ -617,9 +590,8 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="glass"
+          className="glass span-3"
           style={{
-            gridColumn: 'span 3',
             padding: '1.5rem',
             display: 'flex',
             alignItems: 'center',
@@ -667,7 +639,7 @@ const Experience = () => {
           <span className="gradient-text">Experience</span>
         </motion.h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+        <div className="card-grid">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -718,7 +690,7 @@ const Education = () => {
         >
           <span className="gradient-text">Education</span>
         </motion.h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+        <div className="card-grid">
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
@@ -817,7 +789,7 @@ const Skills = () => {
           Technical <span className="gradient-text">Skills</span>
         </motion.h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+        <div className="card-grid" style={{ gap: '2rem' }}>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -935,7 +907,7 @@ const Projects = () => {
           Featured <span className="gradient-text">Work</span>
         </motion.h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+        <div className="card-grid" style={{ gap: '2rem' }}>
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -988,7 +960,7 @@ const Contact = () => {
   return (
     <section id="contact" style={{ padding: '6rem 0 4rem' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+        <div className="card-grid">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1067,7 +1039,7 @@ function App() {
         <>
           <InteractiveStars />
           <Navbar />
-          <main style={{ paddingLeft: '240px', minHeight: '100vh', paddingTop: '0' }}>
+          <main className="main-content">
             <Hero />
             <Experience />
             <Education />

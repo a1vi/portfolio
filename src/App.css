@@ -1,5 +1,39 @@
-/* Main App specific styles if needed, otherwise using global index.css */
+/* Main App specific styles */
 .app-container {
     min-height: 100vh;
     position: relative;
+}
+
+/* Mobile Default (Sidebar hidden, handled by Navbar component overlay) */
+.sidebar {
+    display: none;
+}
+
+.main-content {
+    width: 100%;
+    padding-top: 80px;
+    /* Space for mobile navbar */
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        z-index: 50;
+        padding-top: 2rem;
+    }
+
+    .main-content {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+        padding-top: 0;
+    }
 }
