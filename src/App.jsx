@@ -601,7 +601,7 @@ const Hero = () => {
           }}
           whileHover={{ scale: 1.05, background: 'rgba(0,119,181,0.2)' }}
         >
-          <a href="https://linkedin.com/in/alvialvi91" target="_blank" rel="noreferrer" style={{ color: '#0077b5' }}>
+          <a href="https://www.linkedin.com/in/a1vi/" target="_blank" rel="noreferrer" style={{ color: '#0077b5' }}>
             <Linkedin size={40} />
           </a>
         </motion.div>
@@ -1006,7 +1006,7 @@ const Contact = () => {
               className="glass"
               style={{ padding: '2rem', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}
             >
-              <a href="https://www.linkedin.com/in/atair-rahman-alvi-035128258/" target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', transform: 'scale(1.2)' }}>
+              <a href="https://www.linkedin.com/in/a1vi/" target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', transform: 'scale(1.2)' }}>
                 <Linkedin size={24} />
               </a>
               <a href="https://www.facebook.com/atairrahmanalvi1" target="_blank" rel="noopener noreferrer" style={{ color: '#1877F2', transform: 'scale(1.2)' }}>
