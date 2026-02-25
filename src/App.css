@@ -1,0 +1,84 @@
+/* Main App specific styles */
+.app-container {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Mobile Default (Sidebar hidden, handled by Navbar component overlay) */
+.sidebar {
+    display: none;
+}
+
+.main-content {
+    width: 100%;
+    padding-top: 80px;
+    /* Space for mobile navbar */
+}
+
+/* Base Grid Styles (Mobile First) */
+.hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        z-index: 50;
+        padding-top: 2rem;
+    }
+
+    .main-content {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+        padding-top: 0;
+    }
+
+    /* Grid System for Desktop */
+    .hero-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .span-8 {
+        grid-column: span 8;
+    }
+
+    .span-4 {
+        grid-column: span 4;
+    }
+
+    .span-3 {
+        grid-column: span 3;
+    }
+
+    .span-2 {
+        grid-column: span 2;
+    }
+
+    .row-span-2 {
+        grid-row: span 2;
+    }
+
+    .row-span-3 {
+        grid-row: span 3;
+    }
+}
