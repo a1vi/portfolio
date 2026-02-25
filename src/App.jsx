@@ -673,7 +673,7 @@ const Experience = () => {
 
 // --- EDUCATION ---
 const educationData = [
-  { degree: "B.Sc. in Electrical and Electronic Engineering", school: "BRAC University, Dhaka", year: "2021 – 2025 (Ongoing)", grade: "CGPA: 3.52/4.0" },
+  { degree: "B.Sc. in Electrical and Electronic Engineering", school: "BRAC University, Dhaka", year: "2021 – 2025", grade: "CGPA: 3.52/4.0" },
   { degree: "Higher Secondary Certificate (HSC)", school: "Dr. Mahamubur Rahman Mollah College", year: "2020", grade: "GPA: 4.92/5.0" },
   { degree: "Secondary School Certificate (SSC)", school: "Mograpara H.G.G.S Smrity Biddayoton", year: "2018", grade: "GPA: 4.83/5.0" }
 ];
