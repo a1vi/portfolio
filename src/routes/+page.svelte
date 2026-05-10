@@ -11,13 +11,12 @@
 </script>
 
 <svelte:head>
-	<title>{DATA.name}</title>
+	<title>{DATA.name} | EEE Portfolio</title>
 	<meta name="description" content={DATA.description} />
 	<meta property="og:title" content={DATA.name} />
 	<meta property="og:description" content={DATA.description} />
 	<meta property="og:url" content={DATA.url} />
 	<meta property="og:site_name" content={DATA.name} />
-	<meta property="og:image" content={DATA.img} />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta name="robots" content="index, follow" />
@@ -27,11 +26,7 @@
 	/>
 	<meta name="twitter:title" content={DATA.name} />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content={DATA.img} />
 	<meta name="twitter:description" content={DATA.description} />
-
-	<meta name="google-site-verification" content="your-google-verification-code" />
-	<meta name="yandex-verification" content="your-yandex-verification-code" />
 </svelte:head>
 <main class="flex min-h-[100dvh] flex-col space-y-10">
 	<section id="hero">
@@ -41,11 +36,10 @@
 					<BlurFade
 						delay={BLUR_FADE_DELAY}
 						class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-						yOffset={8}>Hi, I'm Bhide 👋</BlurFade
+						yOffset={8}>Hi, I'm Atair 👋</BlurFade
 					>
 					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}
-						>Software Engineer turned Entrepreneur. I love building things and helping people. Very
-						active on Twitter.</BlurFade
+						>{DATA.description}</BlurFade
 					>
 				</div>
 				<BlurFade delay={BLUR_FADE_DELAY}>
@@ -129,8 +123,8 @@
 						<p
 							class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 						>
-							I&apos;ve worked on a variety of projects, from simple websites to complex web
-							applications. Here are a few of my favorites.
+							I&apos;ve worked on a variety of projects spanning embedded systems, machine learning,
+							VLSI design, and web development.
 						</p>
 					</div>
 				</div>
@@ -153,24 +147,15 @@
 			</div>
 		</div>
 	</section>
-	<section id="hackathons">
+	<section id="publications">
 		<div class="w-full space-y-12 py-12">
 			<BlurFade delay={BLUR_FADE_DELAY}>
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
 					<div class="space-y-2">
 						<div class="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-							Hackathons
+							Publications
 						</div>
-						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">I like building things</h2>
-						<p
-							class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-						>
-							During my time in university, I attended{' '}
-							{DATA.hackathons.length}+ hackathons. People from around the country would come
-							together and build incredible things in 2-3 days. It was eye-opening to see the
-							endless possibilities brought to life by a group of motivated and passionate
-							individuals.
-						</p>
+						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Research Work</h2>
 					</div>
 				</div>
 			</BlurFade>
@@ -196,11 +181,12 @@
 					<p
 						class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 					>
-						Want to chat? Just shoot me a dm
-						<a href={DATA.contact.social.X.url} class="text-blue-500 hover:underline">
-							with a direct question on twitter
+						Currently open for new opportunities. Whether you have a question or just want to say
+						hi, feel free to reach out at
+						<a href="mailto:alvialvi91@gmail.com" class="text-blue-500 hover:underline">
+							alvialvi91@gmail.com
 						</a>
-						and I&apos;ll respond whenever I can. I will ignore all soliciting.
+						and I&apos;ll get back to you!
 					</p>
 				</div>
 			</BlurFade>
