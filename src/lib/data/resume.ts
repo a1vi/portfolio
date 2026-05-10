@@ -1,4 +1,4 @@
-import { CodeIcon, Github, Globe, HomeIcon, NotebookIcon } from 'lucide-svelte';
+import { CodeIcon, Github, Globe, HomeIcon } from 'lucide-svelte';
 // Navbar Icons
 import GithubSvg from '$lib/imgs/github.svg';
 import GithubDarkSvg from '$lib/imgs/github-dark.svg';
@@ -22,7 +22,7 @@ export let DATA = {
 	description:
 		'EEE Graduate transforming ideas into digital reality. Passionate about Power Systems, IoT, VLSI, Semiconductor and Embedded Systems.',
 	summary:
-		'I am a graduate in **Electrical and Electronic Engineering** from BRAC University. I am passionate about [Power Systems](/#education), [IoT](/#skills), [VLSI and Semiconductor field](/#skills). I have experience in embedded systems, machine learning, and web development. I am currently looking for opportunities to apply my skills in a professional setting.',
+		'I am a graduate in **Electrical and Electronic Engineering** from BRAC University, Dhaka. I am passionate about [Power Systems](/#education), [IoT & Embedded Systems](/#skills), [VLSI and Semiconductor field](/#skills). I have experience in embedded systems, machine learning, digital IC design, and web development. I am currently looking for opportunities to apply my skills in a professional setting.',
 	avatarUrl: ProfileImg,
 	skills: [
 		'MATLAB',
@@ -35,18 +35,20 @@ export let DATA = {
 		'Arduino',
 		'Raspberry Pi',
 		'ESP32',
+		'Sensors',
+		'Servo Motors',
+		'Cadence',
 		'AutoCAD',
+		'Control Systems',
 		'Proteus',
 		'Altium',
-		'Cadence',
-		'Control Systems',
-		'React',
-		'Node.js',
-		'JavaScript',
-		'HTML/CSS',
 		'Machine Learning',
 		'CNN',
-		'Image Classification'
+		'Image Classification',
+		'Communication',
+		'Problem Solving',
+		'Teamwork',
+		'Leadership'
 	],
 	navbar: [
 		{ href: '/', icon: HomeIcon, label: 'Home' },
@@ -91,18 +93,6 @@ export let DATA = {
 			end: 'Sep 2025',
 			description:
 				'Supported project planning, task coordination, and documentation for remote teams. Maintained tracking systems and facilitated stakeholder communication to ensure timely project delivery.'
-		},
-		{
-			company: 'BRAC University EEE Club',
-			href: 'https://www.bracu.ac.bd',
-			badges: [],
-			location: 'Dhaka, Bangladesh',
-			title: 'Assistant Director, Human Resource',
-			logoUrl: '',
-			start: 'Sep 2023',
-			end: 'Jul 2024',
-			description:
-				'Handled financial planning and expense tracking for club activities, guided junior members, and played an active role in organizing events by ensuring funds were used effectively and on time.'
 		}
 	],
 	education: [
@@ -112,10 +102,10 @@ export let DATA = {
 			degree: 'B.Sc. in Electrical and Electronic Engineering — CGPA: 3.52/4.0',
 			logoUrl: '',
 			start: '2021',
-			end: '2025'
+			end: '2026'
 		},
 		{
-			school: 'Dr. Mahamubur Rahman Mollah College',
+			school: 'Dr. Mahamubur Rahman Mollah College, Demra, Dhaka',
 			href: '#',
 			degree: 'Higher Secondary Certificate (HSC) — GPA: 4.92/5.0',
 			logoUrl: '',
@@ -123,7 +113,7 @@ export let DATA = {
 			end: '2020'
 		},
 		{
-			school: 'Mograpara H.G.G.S Smrity Biddayoton',
+			school: 'Mograpara H.G.G.S Smrity Biddayoton, Sonargaon, Narayangonj',
 			href: '#',
 			degree: 'Secondary School Certificate (SSC) — GPA: 4.83/5.0',
 			logoUrl: '',
@@ -138,8 +128,8 @@ export let DATA = {
 			dates: '2024 – 2025',
 			active: true,
 			description:
-				'Autonomous firefighting drone with fire-extinguishing ball release mechanism. Built using embedded systems and custom control algorithms.',
-			technologies: ['Drone', 'Embedded Systems', 'Firefighting', 'Arduino', 'Control Systems'],
+				'Autonomous firefighting drone with fire-extinguishing ball release mechanism. Designed for rapid fire detection and emergency response in hazardous areas using embedded control and wireless communication systems.',
+			technologies: ['Drone', 'Embedded Systems', 'Wireless Comms', 'Arduino', 'Control Systems'],
 			links: [],
 			image: '',
 			video: ''
@@ -150,8 +140,8 @@ export let DATA = {
 			dates: '2024',
 			active: true,
 			description:
-				'A hardware accelerator for CNNs, designed using a full RTL-to-GDSII flow on the OpenLane SKY130 process node.',
-			technologies: ['Hardware', 'CNN', 'RTL', 'GDSII', 'SKY130', 'VLSI'],
+				'Design and implementation of a CNN-based AI accelerator from RTL to GDSII using OpenLane and SKY130 PDK. Performed full digital IC design flow including synthesis, floorplanning, placement, routing, and verification.',
+			technologies: ['VLSI', 'RTL', 'GDSII', 'OpenLane', 'SKY130', 'CNN', 'Digital IC Design'],
 			links: [
 				{
 					type: 'Source',
@@ -168,8 +158,8 @@ export let DATA = {
 			dates: '2024',
 			active: true,
 			description:
-				'Satellite image classification for deforestation detection in Dhaka using CNN. Published at ICCIT 2025.',
-			technologies: ['Machine Learning', 'CNN', 'Image Processing', 'Python'],
+				'Satellite image classification for deforestation detection in Dhaka. Applied image processing and machine learning techniques for environmental monitoring and land-use analysis.',
+			technologies: ['Machine Learning', 'CNN', 'Image Processing', 'Python', 'Satellite Imagery'],
 			links: [],
 			image: '',
 			video: ''
@@ -180,20 +170,20 @@ export let DATA = {
 			dates: '2023',
 			active: true,
 			description:
-				'Centralized medication data management and healthcare monitoring system with IoT integration.',
+				'Centralized medication data management and healthcare monitoring system. Developed to improve patient record management, medication tracking, and real-time healthcare monitoring.',
 			technologies: ['Healthcare', 'Data Management', 'IoT', 'React'],
 			links: [],
 			image: '',
 			video: ''
 		},
 		{
-			title: 'SoC Estimation',
+			title: 'Smart Elevator System',
 			href: '#',
 			dates: '2023',
 			active: true,
 			description:
-				'ML-based charging system for light electric vehicles using State of Charge estimation.',
-			technologies: ['Machine Learning', 'EV', 'Power Systems', 'Python'],
+				'Designed and simulated a microcontroller-based elevator control system in Proteus with floor selection, motor control, and automated movement logic.',
+			technologies: ['Proteus', 'Microcontroller', 'Embedded Systems', 'Motor Control'],
 			links: [],
 			image: '',
 			video: ''
@@ -201,13 +191,20 @@ export let DATA = {
 	],
 	hackathons: [
 		{
-			title: 'ICCIT 2025 Publication',
+			title:
+				'Satellite Image Classification for Deforestation Detection in Dhaka Using CNN',
 			dates: '2025',
-			location: 'Dhaka, Bangladesh',
+			location: 'Cox\'s Bazar, Bangladesh',
 			description:
-				'Published: "Satellite Image Classification for Deforestation Detection in Dhaka Using CNN" — Authors: Atair Rahman Alvi, Tahmid Noor Rahman — 28th International Conference on Computer and Information Technology (ICCIT), 2025.',
+				'A. R. Alvi and T. N. Rahman — 2025 28th International Conference on Computer and Information Technology (ICCIT), pp. 5895–5899. doi: 10.1109/ICCIT68739.2025.11491473',
 			image: '',
-			links: []
+			links: [
+				{
+					title: 'DOI',
+					icon: Globe,
+					href: 'https://doi.org/10.1109/ICCIT68739.2025.11491473'
+				}
+			]
 		}
 	]
 };
