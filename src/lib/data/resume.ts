@@ -20,7 +20,7 @@ export let DATA = {
 	location: 'Dhaka, Bangladesh',
 	locationLink: 'https://www.google.com/maps/place/Dhaka',
 	description:
-		'EEE Graduate transforming ideas into digital reality. Passionate about Power Systems, IoT, VLSI and Semiconductor field.',
+		'EEE Graduate transforming ideas into digital reality. Passionate about Power Systems, IoT, VLSI, Semiconductor and Embedded Systems.',
 	summary:
 		'I am a graduate in **Electrical and Electronic Engineering** from BRAC University. I am passionate about [Power Systems](/#education), [IoT](/#skills), [VLSI and Semiconductor field](/#skills). I have experience in embedded systems, machine learning, and web development. I am currently looking for opportunities to apply my skills in a professional setting.',
 	avatarUrl: ProfileImg,
