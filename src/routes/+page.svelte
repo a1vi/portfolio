@@ -36,7 +36,7 @@
 					<BlurFade
 						delay={BLUR_FADE_DELAY}
 						class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-						yOffset={8}>Hi, I'm Atair 👋</BlurFade
+						yOffset={8}>Hi, I'm Alvi 👋</BlurFade
 					>
 					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}
 						>{DATA.description}</BlurFade
