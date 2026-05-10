@@ -9,7 +9,7 @@ import GmailDarkSvg from '$lib/imgs/gmail-dark.svg';
 import LinkedinSvg from '$lib/imgs/linkedin.svg';
 import LinkedinDarkSvg from '$lib/imgs/linkedin-dark.svg';
 
-import ProfileImg from '$lib/imgs/profile_new.jpg';
+import ProfileImg from '$lib/imgs/profile_alvi.jpg';
 
 // Your resume data
 export let DATA = {
