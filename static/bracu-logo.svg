@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- White background -->
+  <rect width="200" height="200" fill="white"/>
+
+  <!-- Outer blue circle ring -->
+  <circle cx="100" cy="95" r="75" fill="none" stroke="#1a3a8f" stroke-width="6"/>
+
+  <!-- Inner circle (white fill) -->
+  <circle cx="100" cy="95" r="67" fill="white"/>
+
+  <!-- Open book at the bottom of circle -->
+  <!-- Left page -->
+  <path d="M 52 118 Q 70 108 100 112 L 100 138 Q 70 134 52 144 Z" fill="#1a3a8f" opacity="0.85"/>
+  <!-- Right page -->
+  <path d="M 148 118 Q 130 108 100 112 L 100 138 Q 130 134 148 144 Z" fill="#555555" opacity="0.85"/>
+  <!-- Book spine -->
+  <line x1="100" y1="112" x2="100" y2="138" stroke="white" stroke-width="2"/>
+
+  <!-- Curved lines above book (decorative wave lines) -->
+  <path d="M 58 104 Q 100 96 142 104" fill="none" stroke="#1a3a8f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 62 110 Q 100 102 138 110" fill="none" stroke="#777777" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- BRAC text -->
+  <text x="100" y="72" text-anchor="middle" fill="#1a3a8f" font-family="Georgia,'Times New Roman',serif" font-size="26" font-weight="bold" letter-spacing="3">BRAC</text>
+
+  <!-- UNIVERSITY text -->
+  <text x="100" y="92" text-anchor="middle" fill="#1a3a8f" font-family="Georgia,'Times New Roman',serif" font-size="13" font-weight="bold" letter-spacing="2">UNIVERSITY</text>
+
+  <!-- Inspiring Excellence text at bottom -->
+  <text x="100" y="185" text-anchor="middle" fill="#333333" font-family="Georgia,'Times New Roman',serif" font-size="11" font-style="italic" letter-spacing="1">Inspiring Excellence</text>
+</svg>
