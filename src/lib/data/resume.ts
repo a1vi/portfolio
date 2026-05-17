@@ -11,6 +11,12 @@ import LinkedinDarkSvg from '$lib/imgs/linkedin-dark.svg';
 
 import ProfileImg from '$lib/imgs/profile_alvi.jpg';
 
+// Institution logos served from /static as public URLs
+const BracuLogo = '/bracu.svg';
+const HscLogo = '/hsc-college.svg';
+const SscLogo = '/ssc-school.svg';
+const ExcelerateLogo = '/excelerate.svg';
+
 // Your resume data
 export let DATA = {
 	name: 'Atair Rahman Alvi',
@@ -88,7 +94,7 @@ export let DATA = {
 			badges: ['Remote'],
 			location: 'Remote',
 			title: 'Associate Project Manager Intern',
-			logoUrl: '',
+			logoUrl: ExcelerateLogo,
 			start: 'Aug 2025',
 			end: 'Sep 2025',
 			description:
@@ -100,7 +106,7 @@ export let DATA = {
 			school: 'BRAC University',
 			href: 'https://www.bracu.ac.bd',
 			degree: 'B.Sc. in Electrical and Electronic Engineering — CGPA: 3.52/4.0',
-			logoUrl: '',
+			logoUrl: BracuLogo,
 			start: '2021',
 			end: '2026'
 		},
@@ -108,7 +114,7 @@ export let DATA = {
 			school: 'Dr. Mahamubur Rahman Mollah College, Demra, Dhaka',
 			href: '#',
 			degree: 'Higher Secondary Certificate (HSC) — GPA: 4.92/5.0',
-			logoUrl: '',
+			logoUrl: HscLogo,
 			start: '2018',
 			end: '2020'
 		},
@@ -116,7 +122,7 @@ export let DATA = {
 			school: 'Mograpara H.G.G.S Smrity Biddayoton, Sonargaon, Narayangonj',
 			href: '#',
 			degree: 'Secondary School Certificate (SSC) — GPA: 4.83/5.0',
-			logoUrl: '',
+			logoUrl: SscLogo,
 			start: '2016',
 			end: '2018'
 		}

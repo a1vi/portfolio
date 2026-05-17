@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="hscGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d3b6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a6496;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hscAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#56CCF2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F80ED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="100" height="100" rx="14" fill="url(#hscGrad)"/>
+  <!-- Top accent -->
+  <rect x="0" y="0" width="100" height="5" rx="14" fill="url(#hscAccent)"/>
+  <!-- Book icon -->
+  <rect x="28" y="22" width="19" height="24" rx="2" fill="white" opacity="0.15"/>
+  <rect x="29" y="23" width="17" height="22" rx="1" fill="white" opacity="0.1"/>
+  <rect x="53" y="22" width="19" height="24" rx="2" fill="white" opacity="0.15"/>
+  <rect x="54" y="23" width="17" height="22" rx="1" fill="white" opacity="0.1"/>
+  <!-- Book spine -->
+  <rect x="46" y="22" width="8" height="24" rx="1" fill="#56CCF2" opacity="0.5"/>
+  <!-- Lines on left page -->
+  <line x1="32" y1="29" x2="44" y2="29" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  <line x1="32" y1="33" x2="44" y2="33" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  <line x1="32" y1="37" x2="44" y2="37" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  <!-- Lines on right page -->
+  <line x1="56" y1="29" x2="68" y2="29" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  <line x1="56" y1="33" x2="68" y2="33" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  <line x1="56" y1="37" x2="68" y2="37" stroke="white" stroke-width="1.2" opacity="0.5"/>
+  <!-- HSC Text -->
+  <text x="50" y="63" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="2">HSC</text>
+  <rect x="18" y="67" width="64" height="1.2" rx="1" fill="url(#hscAccent)" opacity="0.6"/>
+  <text x="50" y="77" text-anchor="middle" fill="#7EC8E3" font-family="Arial,sans-serif" font-size="7" letter-spacing="1">Dr. MR Mollah</text>
+  <text x="50" y="88" text-anchor="middle" fill="#7EC8E3" font-family="Arial,sans-serif" font-size="7" letter-spacing="0.5">College, Demra</text>
+</svg>
