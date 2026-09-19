@@ -11,7 +11,7 @@ import { useSettings } from './settings'
  */
 
 const TRACK = {
-  src: '/music/ode-to-heroes.mp3',
+  src: './music/ode-to-heroes.mp3',
   title: 'Ode to Heroes',
   by: 'Metaphor: ReFantazio · Shoji Meguro',
 }
@@ -28,6 +28,12 @@ function ensure(): HTMLAudioElement {
   audio.loop = true
   audio.preload = 'auto'
   audio.volume = VOLUME
+  
+  // Add error handling
+  audio.addEventListener('error', (e) => {
+    console.error('Music failed to load:', e)
+  })
+  
   // resume where the session left off
   const saved = Number(sessionStorage.getItem(POS_KEY))
   if (Number.isFinite(saved) && saved > 0) {
