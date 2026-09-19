@@ -8,7 +8,7 @@ import { useNav } from '../app/router'
 import { useSettings } from '../app/settings'
 import { useIsMobile } from '../hooks/useMedia'
 import { sfx } from '../app/audio'
-import { archive, collectionOf, collections, pieceUrl, type Collection } from '../data/archive'
+import { archive, collectionOf, collections, type Collection } from '../data/archive'
 import './Archive.css'
 
 const ease = [0.16, 1, 0.3, 1] as const

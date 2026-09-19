@@ -25,7 +25,7 @@ const ledger = [
   { id: 'quests', label: 'Projects', value: projects.length, unit: `${projects.filter((p) => p.tier === 'main').length} main · ${projects.filter((p) => p.tier === 'side').length} side`, path: '/quests', paint: '#d84291', word: 'Projects' },
   { id: 'abilities', label: 'Skills', value: skillCategories.reduce((n, c) => n + c.skills.length, 0), unit: `tools · ${skillCategories.length} areas`, path: '/abilities', paint: '#f14352', word: 'Abilities' },
   { id: 'chronicle', label: 'Experience', value: experience.length, unit: 'roles', path: '/chronicle', paint: '#eb523d', word: 'Experience' },
-  { id: 'research', label: 'Research', value: 1, unit: `thesis · grade ${research.grade}`, path: '/research', paint: '#ea6c1b', word: 'Research' },
+  { id: 'research', label: 'Research', value: research.length, unit: 'papers', path: '/research', paint: '#ea6c1b', word: 'Research' },
   { id: 'archive', label: 'Creative work', value: archive.length, unit: 'works', path: '/archive', paint: '#d4a900', word: 'Creative' },
 ]
 

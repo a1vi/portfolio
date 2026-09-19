@@ -22,7 +22,7 @@ export interface ResearchPaper {
   art: number
 }
 
-export const research: ResearchPaper[] = [
+export const research = [
   {
     id: 'openlane-timing-closure',
     title: 'OpenLane Parameter Sweep',

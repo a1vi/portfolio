@@ -8,7 +8,7 @@ import { useKeyNav } from "../hooks/useKeyNav";
 import { useNav } from "../app/router";
 import { useSettings } from "../app/settings";
 import { profile } from "../data/profile";
-import { research, type ResearchPaper } from "../data/research";
+import { research } from "../data/research";
 import "./Research.css";
 
 const ease = [0.16, 1, 0.3, 1] as const;
