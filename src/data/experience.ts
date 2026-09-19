@@ -88,28 +88,6 @@ export const experience: Experience[] = [
     tech: ['Pixhawk PX4', 'Arduino Nano', 'ESP8266', 'GPS', 'Sensors', 'Servos', 'C++'],
     art: 10,
   },
-  {
-    id: 'ml-research',
-    org: 'ELITE Research Lab / BRAC University',
-    role: 'Machine Learning Researcher',
-    kind: 'work',
-    start: 2024.0,
-    end: 2025.3,
-    period: '2024 · 2025',
-    location: 'Dhaka, Bangladesh',
-    paint: '#f14352',
-    portrait: 4,
-    summary:
-      'Conducted deep learning research on satellite image classification for environmental monitoring, successfully publishing at IEEE ICCIT 2025.',
-    duties: [
-      'Engineered spectral image preprocessing and normalization pipelines for satellite tiles',
-      'Trained and evaluated deep Convolutional Neural Networks (CNNs)',
-      'Analyzed temporal vegetation cover loss across the Dhaka metropolitan region',
-      'Authored paper and presented findings at IEEE ICCIT 2025 (Cox’s Bazar)',
-    ],
-    tech: ['Python', 'TensorFlow', 'OpenCV', 'CNNs', 'Remote Sensing', 'GIS'],
-    art: 4,
-  },
 ]
 
 export const kindLabel: Record<Experience['kind'], string> = {

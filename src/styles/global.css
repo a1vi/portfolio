@@ -23,13 +23,16 @@ body {
   font-family: var(--font-ui);
   font-stretch: var(--ui-stretch);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 1.4;
   color: var(--fg);
   background: var(--bg);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 body[data-cursor='custom'] {
@@ -102,6 +105,8 @@ img {
   padding: 0 var(--gutter);
   scrollbar-width: thin;
   scrollbar-color: var(--line-faint) transparent;
+  max-width: 100vw;
+  width: 100%;
 }
 
 /* Reduced motion — kill anything animated by CSS */

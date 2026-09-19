@@ -194,9 +194,8 @@ export function Archive() {
                           aria-label={`${x.title}, ${c.title}, ${x.year}`}
                         >
                           <span className="piece__frame">
-                            <img src={pieceUrl(x.image)} alt="" loading="lazy" className={x.fit === 'contain' ? 'is-contain' : ''} />
-                            {x.fit === 'contain' && <span className="piece__wash" style={{ backgroundImage: `url(${pieceUrl(x.image)})` }} />}
-                            {x.video && <span className="piece__reel" aria-hidden="true" />}
+                            <img src={x.image} alt="" loading="lazy" className={x.fit === 'contain' ? 'is-contain' : ''} />
+                            {x.fit === 'contain' && <span className="piece__wash" style={{ backgroundImage: `url(${x.image})` }} />}
                             <span className="piece__num t-num">{String(i + 1).padStart(2, '0')}</span>
                           </span>
                           <span className="piece__cap">
@@ -225,14 +224,8 @@ export function Archive() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: reducedMotion ? 0 : 0.6, ease }}
               >
-                {p.video && !reducedMotion ? (
-                  <video src={pieceUrl(p.video)} poster={pieceUrl(p.image)} autoPlay muted loop playsInline preload="auto" />
-                ) : (
-                  <>
-                    {p.fit === 'contain' && <span className="view__wash" style={{ backgroundImage: `url(${pieceUrl(p.image)})` }} />}
-                    <img src={pieceUrl(p.image)} alt="" className={p.fit === 'contain' ? 'is-contain' : ''} />
-                  </>
-                )}
+                {p.fit === 'contain' && <span className="view__wash" style={{ backgroundImage: `url(${p.image})` }} />}
+                <img src={p.image} alt="" className={p.fit === 'contain' ? 'is-contain' : ''} />
               </motion.div>
             </AnimatePresence>
             <span className="view__corner view__corner--tl" aria-hidden="true" />

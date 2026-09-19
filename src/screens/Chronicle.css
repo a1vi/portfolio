@@ -164,9 +164,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.9vh;
-  max-width: 57vw;
+  gap: 1.5vh;
+  max-width: 52vw;
   padding-bottom: 2vh;
+  overflow: hidden;
 }
 .dos__kicker {
   color: var(--paint);
@@ -179,12 +180,14 @@
   display: inline-block;
   align-self: flex-start;
   isolation: isolate;
-  font-size: clamp(40px, 8vh, 104px);
+  font-size: clamp(32px, 6vh, 80px);
   line-height: 0.9;
   padding: 0.06em 0.2em 0.04em 0.08em;
   margin-left: -0.08em;
   max-width: 100%;
   white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   transform: none;
 }
 .dos__role-text {
@@ -218,10 +221,13 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: clamp(1.5rem, 3.8vh, 3rem);
+  font-size: clamp(1.2rem, 2.8vh, 2.4rem);
   line-height: 1;
   color: var(--cream);
   text-shadow: 0.045em 0.045em 0 var(--ink);
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* stat band */
@@ -314,7 +320,17 @@
     opacity: 0.6;
   }
   .dos {
-    max-width: none;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .dos__role {
+    font-size: clamp(24px, 4vh, 48px);
+  }
+  .dos__org {
+    font-size: clamp(0.9rem, 1.8vh, 1.4rem);
+  }
+  .dos__summary {
+    max-width: 100%;
   }
 }
 
@@ -327,21 +343,21 @@
     height: auto;
     gap: 2.4vh;
   }
-  /* the index becomes a strip of five equal tabs */
+  /* the index becomes a strip of tabs */
   .ch__index {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
     border-right: 0;
     padding: 0 0 1.6vh;
     border-bottom: 1px solid var(--line-faint);
   }
   .idx {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    padding: 8px 8px 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
     min-width: 0;
     box-shadow: inset 0 0 0 1px var(--line-faint);
     clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
@@ -355,35 +371,43 @@
     display: none;
   }
   .idx__num {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1;
+    flex-shrink: 0;
   }
   .idx__text {
     display: flex;
+    flex-direction: column;
+    min-width: 0;
   }
   .idx__org {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     letter-spacing: 0.04em;
     line-height: 1.1;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
   .idx__period {
-    display: none;
+    font-size: 0.65rem;
+    opacity: 0.7;
   }
   .dos {
     justify-content: flex-start;
     gap: 1.6vh;
     max-width: none;
+    padding: 0 1rem;
   }
   /* the role: cream on a paint bar instead of the brush stroke, so long titles stay readable */
   .dos__role {
-    font-size: clamp(26px, 7.4vw, 40px);
+    font-size: clamp(18px, 5vw, 28px);
     padding: 0 0 6px;
     margin-left: 0;
     border-bottom: 4px solid var(--paint);
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .dos__role-text {
     transform: none;
@@ -408,10 +432,11 @@
     border-right: 0;
   }
   .dstat__val {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
   .dos__summary {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    max-width: 100%;
   }
   .dos__duties ol {
     grid-template-columns: 1fr;
